@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('hostel2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            padding: 0px;
+            margin: 0px;
+            
+
+        }
+        
+        #main1{
+            width: 400px;
+            height: 50px;
+            align-items: center;
+            font: bold 50px arial;
+            position: relative;
+            left: 1100px;
+            top: 80px;
+        }
+
+        /* #main2{
+            width: 400px;
+            height: 100px;
+            align-items: center;
+            font: bold 50px arial;
+            position: relative;
+            left: 400px;
+            top: 80px;
+        } */
+        #city{
+            width: 500px;
+            /* margin: 20px;
+            width: 500px;
+            height:50px ;
+            padding: 2px;
+            position: absolute;
+            font: bold 20px ;
+            display: flex 15px arial; */
+        
+        }
+        .list{
+            width: 500px;
+            height: 100px;
+
+        }
+        .button{
+            width: 150px;
+            height: 30px;
+            position: absolute;
+            left: 1300px;
+            top: 10px;
+            background-color:red;
+
+        }
+
+        .search{
+            width: 150px;
+            height: 30px;
+            position: relative;
+            left: 210px;
+            top: 40px;
+            /* background-color:red; */
+            
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <p id="main1">FIND YOUR FAVOURIT LIVING STYLE .</p>
+    <!-- <p id="main2">find your favourite living style </p> -->
+</div>
+    
+<div id="input">
+    <!-- <input type="text" placeholder="SELECT THE AREA" required> -->
+   
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+
+
+    <select id="city">
+        <option value=" ">Select the city</option>
+        <option value="sinhgad">Sinhgad,pune</option>
+        <option value="Lohgaon">Lohgaon,pune</option>
+        <option value="Pimpri">Pimpri,pune</option>
+        <option value="Kalewadi">Kalevadi,pune</option>
+        <option value="Hadpser">Hadpser,pune</option>
+        <option value="Akurdi">Akurdi,pune</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    
+
+    <select class="list" >
+        <option value="">Select the name of college </option>
+        <option value="6155">GH Raisoni college of engineering ,wagholi,pune</option>
+        <option value="6156">JSPM,wagholi,pune</option>
+        <option value="6157">Moze college of engineering ,wagholi,pune</option>
+        <option value="6158">sinhgad college of engineering ,sinhgad,pune</option>
+        <option value="6159">JSPM  college of engineering ,tatavad,pune</option>
+        <option value="6151">vishvakerma college of engineering ,kondkava,pune</option>
+        <option value="6152">zeal college of engineering ,wagholi,pune</option>
+        <option value="6153">MIT college of engineering ,alandi,pune</option>
+        <option value="6154">D Y Patil college of engineering ,Akurdi,pune</option>
+    </select>
+
+
+    <script>
+        jQuery('#city').chosen();
+        jQuery('.list').chosen();
+
+    </script>
+</div>
+
+<button class="button">
+    <a href="/loginpage.html"><b>LOGIN</b></a>
+</button>
+<button class="search">
+    <a href="/search.html"><b>SEARCH</b></a>
+</button>
+    
+</body>
+</html>
